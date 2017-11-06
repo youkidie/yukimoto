@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5B7945F86E4412C6037BBD1 /* Pods_yukimoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F972D302ECABA0B1C75EC24 /* Pods_yukimoto.framework */; };
 		DE11E0C11FB032D100D88539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11E0C01FB032D100D88539 /* AppDelegate.swift */; };
 		DE11E0C31FB032D100D88539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11E0C21FB032D100D88539 /* ViewController.swift */; };
 		DE11E0C61FB032D100D88539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE11E0C41FB032D100D88539 /* Main.storyboard */; };
 		DE11E0C81FB032D100D88539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE11E0C71FB032D100D88539 /* Assets.xcassets */; };
 		DE11E0CB1FB032D100D88539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE11E0C91FB032D100D88539 /* LaunchScreen.storyboard */; };
+		DE11E0D41FB03A6200D88539 /* YukimotoNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11E0D31FB03A6200D88539 /* YukimotoNetworkClient.swift */; };
+		DE11E0D61FB03ADF00D88539 /* YukimotoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11E0D51FB03ADF00D88539 /* YukimotoConfig.swift */; };
+		DE11E0D91FB03FC300D88539 /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11E0D81FB03FC300D88539 /* UserToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F972D302ECABA0B1C75EC24 /* Pods_yukimoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yukimoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C11DBEE59A8404278DED37 /* Pods-yukimoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yukimoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yukimoto/Pods-yukimoto.debug.xcconfig"; sourceTree = "<group>"; };
+		85CB86265A7C01EDD9E1C3A8 /* Pods-yukimoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yukimoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-yukimoto/Pods-yukimoto.release.xcconfig"; sourceTree = "<group>"; };
 		DE11E0BD1FB032D100D88539 /* yukimoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yukimoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE11E0C01FB032D100D88539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE11E0C21FB032D100D88539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		DE11E0C71FB032D100D88539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE11E0CA1FB032D100D88539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE11E0CC1FB032D100D88539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE11E0D31FB03A6200D88539 /* YukimotoNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YukimotoNetworkClient.swift; sourceTree = "<group>"; };
+		DE11E0D51FB03ADF00D88539 /* YukimotoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YukimotoConfig.swift; sourceTree = "<group>"; };
+		DE11E0D81FB03FC300D88539 /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B7945F86E4412C6037BBD1 /* Pods_yukimoto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16111D6908D100E82C43B429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F972D302ECABA0B1C75EC24 /* Pods_yukimoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77975AAA2CFBB648376D48BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C11DBEE59A8404278DED37 /* Pods-yukimoto.debug.xcconfig */,
+				85CB86265A7C01EDD9E1C3A8 /* Pods-yukimoto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE11E0B41FB032D000D88539 = {
 			isa = PBXGroup;
 			children = (
 				DE11E0BF1FB032D100D88539 /* yukimoto */,
 				DE11E0BE1FB032D100D88539 /* Products */,
+				77975AAA2CFBB648376D48BE /* Pods */,
+				16111D6908D100E82C43B429 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,33 @@
 		DE11E0BF1FB032D100D88539 /* yukimoto */ = {
 			isa = PBXGroup;
 			children = (
+				DE11E0D71FB03F9B00D88539 /* Storage */,
+				DE11E0D21FB03A1900D88539 /* Network */,
 				DE11E0C01FB032D100D88539 /* AppDelegate.swift */,
 				DE11E0C21FB032D100D88539 /* ViewController.swift */,
 				DE11E0C41FB032D100D88539 /* Main.storyboard */,
 				DE11E0C71FB032D100D88539 /* Assets.xcassets */,
 				DE11E0C91FB032D100D88539 /* LaunchScreen.storyboard */,
 				DE11E0CC1FB032D100D88539 /* Info.plist */,
+				DE11E0D51FB03ADF00D88539 /* YukimotoConfig.swift */,
 			);
 			path = yukimoto;
+			sourceTree = "<group>";
+		};
+		DE11E0D21FB03A1900D88539 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE11E0D31FB03A6200D88539 /* YukimotoNetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE11E0D71FB03F9B00D88539 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DE11E0D81FB03FC300D88539 /* UserToken.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE11E0CF1FB032D100D88539 /* Build configuration list for PBXNativeTarget "yukimoto" */;
 			buildPhases = (
+				4285C8AC2B3B242CF59FC698 /* [CP] Check Pods Manifest.lock */,
 				DE11E0B91FB032D100D88539 /* Sources */,
 				DE11E0BA1FB032D100D88539 /* Frameworks */,
 				DE11E0BB1FB032D100D88539 /* Resources */,
+				8ECFF316D5FD3D24A00AC1CB /* [CP] Embed Pods Frameworks */,
+				613C381FC8016D404E39C56D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +183,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4285C8AC2B3B242CF59FC698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yukimoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		613C381FC8016D404E39C56D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yukimoto/Pods-yukimoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECFF316D5FD3D24A00AC1CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yukimoto/Pods-yukimoto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yukimoto/Pods-yukimoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE11E0B91FB032D100D88539 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE11E0D41FB03A6200D88539 /* YukimotoNetworkClient.swift in Sources */,
 				DE11E0C31FB032D100D88539 /* ViewController.swift in Sources */,
+				DE11E0D91FB03FC300D88539 /* UserToken.swift in Sources */,
+				DE11E0D61FB03ADF00D88539 /* YukimotoConfig.swift in Sources */,
 				DE11E0C11FB032D100D88539 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +387,7 @@
 		};
 		DE11E0D01FB032D100D88539 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C11DBEE59A8404278DED37 /* Pods-yukimoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +403,7 @@
 		};
 		DE11E0D11FB032D100D88539 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85CB86265A7C01EDD9E1C3A8 /* Pods-yukimoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
